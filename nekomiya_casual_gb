@@ -1,0 +1,101 @@
+[Constants]
+
+global persist $outer = 0
+
+global persist $bra = 0
+
+global persist $sleeve = 0
+
+global persist $sleeve2 = 0
+
+global persist $panties = 0
+
+global persist $color = 0
+
+global $active
+
+global $creditinfo = 0
+
+-----------------------------------------------------------------------------
+
+[KeySwapbra]
+
+condition = $active == 1
+
+key = VK_DOWN
+
+type = cycle
+
+$bra = 0,1
+
+$creditinfo = 0
+
+-----------------------------------------------------------------------------
+
+[KeySwappanites]
+
+condition = $active == 1
+
+key = ]
+
+type = cycle
+
+$panties = 0,1
+
+$creditinfo = 0
+
+ib = ResourceNekomataBodyAIB
+
+NekomataBodyA (16653)
+
+drawindexed = 84972, 0, 0
+
+NekomataBodyA
+
+NekomataBodyA (16653)
+
+drawindexed = 84972, 84972, 0
+
+if $bra == 1
+
+bra (3351)
+
+drawindexed = 18546, 169944, 0
+
+endif
+
+if $outer == 1
+
+outer (4468)
+
+drawindexed = 21414, 188490, 0
+
+endif
+
+if $panties == 1
+
+panties (582)
+
+drawindexed = 2544, 209904, 0
+
+endif
+
+; pants (1268)
+
+; drawindexed = 6612, 212448, 0
+
+if $sleeve == 1
+
+sleeve (3573)
+
+drawindexed = 17262, 219060, 0
+
+endif
+
+if $sleeve2 == 1
+
+sleeve2 (1728)
+
+drawindexed = 8958, 236322, 0
+
+endif
